@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+:root{
+  --white: #ffffff; 
+  --black: #000000;
+  --red: #ed1c24;
+  --gray: #4d4d4d;
+  --darkgray:#0f0f0f;
+}
+*{
+  flex-wrap: wrap;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 62.5%;
+  background-color: var(--black);
+  width: 100%;
+  justify-content: center;
+
+}
+
+  /* CONTAINER */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 5px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--gray);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #000;
+  padding: 8px 0;
+}
+.logo img {
+  width: 160px;
+}
+
+/* RIGHT SIDE (Links + Buttons Together) */
+.right-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px; /* small space between links and buttons */
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+.nav-links a {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+
+/* BUTTONS */
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+.btn-outline {
+  padding: 10px 20px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 30px;
+  font-size: 14px;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.btn-red {
+  padding: 10px 20px;
+  background-color: #ed1c24;
+  color: white;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s;
+  text-decoration: none;
+}
+.arrow-circle {
+  background-color: white;
+  color: #ed1c24;
+  border-radius: 50%;
+  padding: 6px 10px;
+  font-size: 14px;
+  display: inline-block;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.btn-red .arrow {
+  margin-left: 8px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+
+
+
+/* introduction-section */
+
+
+.intro{
+    color: var(--white);
+    text-align: center;
+    margin-top: 70px;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.intro>p{
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 25px 90px;
+
+    color: #96b3b3;
+    line-height: normal;
+    
+    
+}

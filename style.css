@@ -1,5 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
 :root{
-    --black: #000000;
-    --white: #ffffff;
-    
+  --white: #ffffff; 
+  --black: #000000;
+  --red: #ed1c24;
+  --gray: #4d4d4d;
+  --darkgray:#0f0f0f;
+}
+*{
+  flex-wrap: wrap;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 62.5%;
+  background-color: var(--darkgray);
+  
+}
+a {
+  text-decoration: none;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #000;
+  padding: 8px 0;
+}
+.logo img {
+  width: 160px;
+}
+
+/* RIGHT SIDE (Links + Buttons Together) */
+.right-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px; /* small space between links and buttons */
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+.nav-links a {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+
+/* BUTTONS */
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+.btn-outline {
+  padding: 10px 20px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 30px;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.btn-red {
+  padding: 10px 20px;
+  background-color: #ed1c24;
+  color: white;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.arrow-circle {
+  background-color: white;
+  color: #ed1c24;
+  border-radius: 50%;
+  padding: 6px 10px;
+  font-size: 14px;
+  display: inline-block;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.btn-red .arrow {
+  margin-left: 8px;
+  font-weight: normal;
+  font-size: 16px;
+}
+.main-image{
+  width: 100%;
+}
+
+
+
+}
+
+.brand-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.brand-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+
+
+
+
+body {
+  
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+ 
+  color: white;
+}
+
+.brands-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: var(--black);
+
+}
+
+.brands-section h2 {
+  font-size: 36px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+@font-face {
+  font-family: futurak;
+  src: url(./fonts/futurak.ttf);
+}
+.brands-section .highlight {
+  font-weight: bold;
+  font-size: 40px;
+  font-family: futurak;
+}
+
+.brands-section h3 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.description {
+  color: #ccc;
+  font-size: 16px;
+  max-width: 600px;
+  margin: 10px auto 40px;
+}
+
+.brand-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.brand-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.brand-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: 250px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.brand-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.brand-btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 24px;
+  border: 1px solid #4d4d4d;
+  border-radius: 25px;
+  background-color: #000;
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+
+.container-4{
+   background-color: white;
+  border-radius: 12px;
+  padding: 19px 10px;
+  width: 250px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+
+
+
+
+.website-name{
+  text-align: center;
+  margin-top: 50px;
+  background-color: var(--darkgray);
+  font-size: 2rem;
+  margin-top: 150px;
+  padding: 70px 0px;
+
+}
+.website-name>p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+
+}
+.website-name>H1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.7rem;
+  color: var(--white);
+  margin-top: 2px;
+  margin-bottom: 30px;
+}
+
+
+
+
+.text-image{
+  background-color: var(--darkgray);
+  
+}
+
+@font-face {
+  font-family: apercu;
+  src: url(./fonts/apercu_regular_pro.otf);
+}
+.text-image{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 3px;
+   text-align: start; 
+   font-size: small;
+  color: var(--red);
+  margin-left: 80px;
+  margin-top: 30px;
+  display: inline;
+  
+}
+.text-image>h2{
+  font-family: futurak;
+  color: var(--white);
+  font-size: 1.8rem;
+  
+}
+.text-image>h2>i{
+  
+  font-family: apercu;
+  font-weight: normal;
+
+
+}
+
+
+
+
+
+
+.franchise-section {
+  max-width: 100%;
+  padding: 30px;
+  margin-left: 50px;
+  margin-top: 50px;
+  text-align: center;
+  background-color: var(--darkgray);
+  font-size: 1rem;
+  
+}
+
+.franchise-section h2 {
+  font-family: futurak;
+  font-size: 50px;
+}
+
+.franchise-section h3 {
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+.franchise-section p {
+  color: #bbb;
+  margin-bottom: 40px;
+}
+
+.franchise-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.franchise-container.reverse {
+ 
+}
+
+.franchise-info {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.franchise-info h4 {
+  color: red;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+.franchise-info h5 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.franchise-info h5 span {
+  font-family: 'Butler', serif;
+  font-weight: bold;
+}
+
+.franchise-info p {
+  color: #ccc;
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.direction-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 20px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  background: var(--darkgray);
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+}
+
+.direction-btn .arrow {
+  background: white;
+  color: var(--red);
+  border-radius: 50%;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.franchise-img {
+  flex: 1;
+  padding: 20px;
+}
+
+.franchise-img img {
+  width: 100%;
+  border-radius: 10px;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+
+
+.change-font{
+  font-family: futurak;
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--white);
+}
+.franchise-info>p1{
+  font-size: 40px;
 }
